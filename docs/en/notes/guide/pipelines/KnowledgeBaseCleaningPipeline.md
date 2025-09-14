@@ -261,15 +261,20 @@ Users can execute the following scripts to meet different data requirements. Not
 - Knowledge base cleaning and construction for PDF files:
 
   ```shell
-  python gpu_pipelines/kbcleaning_pipeline_pdf_vllm.py
-  python gpu_pipelines/kbcleaning_pipeline_pdf_sglang.py
+  python gpu_pipelines/kbcleaning/kbcleaning_pipeline_pdf_vllm.py 
+  python gpu_pipelines/kbcleaningkbcleaning_pipeline_pdf_sglang.py 
   ```
+    [kbcleaning_pipeline_pdf_vllm.py](https://github.com/OpenDCAI/DataFlow/blob/main/dataflow/statics/pipelines/gpu_pipelines/kbcleaning/kbcleaning_pipeline_pdf_vllm.py) 
+    [kbcleaning_pipeline_pdf_sglang.py ](https://github.com/OpenDCAI/DataFlow/blob/main/dataflow/statics/pipelines/gpu_pipelines/kbcleaning/kbcleaning_pipeline_pdf_sglang.py)
+
 - Knowledge base cleaning and construction after URL crawling:
 
   ```shell
-  python gpu_pipelines/kbcleaning_pipeline_url_vllm.py
-  python gpu_pipelines/kbcleaning_pipeline_url_sglang.py
+  python gpu_pipelines/kbcleaning/kbcleaning_pipeline_url_vllm.py 
+  python gpu_pipelines/kbcleaning/kbcleaning_pipeline_url_sglang.py 
   ```
+    [kbcleaning_pipeline_url_vllm.py](https://github.com/OpenDCAI/DataFlow/blob/main/dataflow/statics/pipelines/gpu_pipelines/kbcleaning/kbcleaning_pipeline_url_vllm.py)
+    [kbcleaning_pipeline_url_sglang.py](https://github.com/OpenDCAI/DataFlow/blob/main/dataflow/statics/pipelines/gpu_pipelines/kbcleaning/kbcleaning_pipeline_url_sglang.py)
 
 ## 4. Pipeline Example
 

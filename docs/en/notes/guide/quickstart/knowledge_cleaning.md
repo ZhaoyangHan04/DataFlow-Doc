@@ -52,8 +52,9 @@ cd gpu_pipelines/kbcleaning
 ## Step 4: One-click execution
 
 ```bash
-python kbcleaning_pipeline_batch_sglang.py
+python kbcleaning_pipeline_batch_sglang.py 
 ```
+[code](https://github.com/OpenDCAI/DataFlow/blob/main/dataflow/statics/pipelines/gpu_pipelines/kbcleaning/kbcleaning_pipeline_batch_sglang.py)
 
 During execution, this pipeline will sequentially call:
 

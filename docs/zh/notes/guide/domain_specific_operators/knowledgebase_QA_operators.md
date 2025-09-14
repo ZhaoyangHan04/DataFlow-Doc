@@ -76,7 +76,7 @@ self.storage = FileStorage(
 
 **功能描述**：
 
-   知识提取算子（FileOrURLToMarkdownConverter）是一个多功能文档处理工具，支持从多种文件格式中提取结构化内容并转换为标准Markdown格式。该算子整合了多个专业解析引擎，实现高精度的文档内容转换。
+   知识提取算子（FileOrURLToMarkdownConverter）是一个多功能文档处理工具，支持从多种文件格式中提取结构化内容并转换为标准Markdown格式。该算子整合了多个专业解析引擎，实现高精度的文档内容转换。代码: [FileOrURLToMarkdownConverter](https://github.com/OpenDCAI/DataFlow/blob/main/dataflow/operators/knowledge_cleaning/generate/file_or_url_to_markdown_converter.py)
 
    **输入参数**：
 
@@ -131,7 +131,7 @@ extracted=file_to_markdown_converter.run(
 
 ### 2. KBCChunkGenerator
 
-**功能描述**：KBCChunkGenerator 是一个高效灵活的文本分块工具，专为处理大规模文本语料设计。该算子支持多种分块策略，可智能分割文本以适应不同NLP任务的需求，特别优化了RAG（检索增强生成）应用场景。
+**功能描述**：KBCChunkGenerator 是一个高效灵活的文本分块工具，专为处理大规模文本语料设计。该算子支持多种分块策略，可智能分割文本以适应不同NLP任务的需求，特别优化了RAG（检索增强生成）应用场景。代码:[KBCChunkGenerator](https://github.com/OpenDCAI/DataFlow/blob/main/dataflow/operators/knowledge_cleaning/generate/kbc_chunk_generator.py)
 
 **输入参数**：
 
@@ -198,7 +198,7 @@ text_splitter.run(
 
 ### 3. KBCTextCleaner
 
-   **功能描述**：KBCTextCleaner 是一个专业的知识清洗算子，专门用于对RAG（检索增强生成）系统中的原始知识内容进行标准化处理。该算子通过大语言模型接口，实现对非结构化知识的智能清洗和格式化，提升知识库的准确性和可读性。
+   **功能描述**：KBCTextCleaner 是一个专业的知识清洗算子，专门用于对RAG（检索增强生成）系统中的原始知识内容进行标准化处理。该算子通过大语言模型接口，实现对非结构化知识的智能清洗和格式化，提升知识库的准确性和可读性。代码:[KBCTextCleaner](https://github.com/OpenDCAI/DataFlow/blob/main/dataflow/operators/knowledge_cleaning/generate/kbc_text_cleaner.py)
 
    **输入参数**：
 
@@ -257,7 +257,7 @@ extracted_path = text_cleaner.run(
 
 ###    4. KBCMultiHopQAGenerator
 
-**功能描述**：MultiHopQAGenerator 是一个专业的多跳问答对生成算子，专门用于从文本数据中自动生成需要多步推理的问题-答案对。该算子通过大语言模型接口，实现对文本的智能分析和复杂问题构建，适用于构建高质量的多跳问答数据集。
+**功能描述**：MultiHopQAGenerator 是一个专业的多跳问答对生成算子，专门用于从文本数据中自动生成需要多步推理的问题-答案对。该算子通过大语言模型接口，实现对文本的智能分析和复杂问题构建，适用于构建高质量的多跳问答数据集。代码:[KBCMultiHopQAGenerator](https://github.com/OpenDCAI/DataFlow/blob/main/dataflow/operators/knowledge_cleaning/generate/kbc_multihop_qa_generator.py)
 
 **输入参数**：
 

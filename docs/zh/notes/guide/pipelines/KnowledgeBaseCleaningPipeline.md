@@ -251,15 +251,20 @@ pip install "numpy>=1.24,<2.0.0"
 - PDF文件知识库清洗构建
 
   ```shell
-  python gpu_pipelines/kbcleaning_pipeline_pdf_vllm.py
-  python gpu_pipelines/kbcleaning_pipeline_pdf_sglang.py
+  python gpu_pipelines/kbcleaning/kbcleaning_pipeline_pdf_vllm.py 
+  python gpu_pipelines/kbcleaningkbcleaning_pipeline_pdf_sglang.py 
   ```
+    [kbcleaning_pipeline_pdf_vllm.py](https://github.com/OpenDCAI/DataFlow/blob/main/dataflow/statics/pipelines/gpu_pipelines/kbcleaning/kbcleaning_pipeline_pdf_vllm.py) 
+    [kbcleaning_pipeline_pdf_sglang.py ](https://github.com/OpenDCAI/DataFlow/blob/main/dataflow/statics/pipelines/gpu_pipelines/kbcleaning/kbcleaning_pipeline_pdf_sglang.py)
+
 - URL爬取后知识库清洗构建
 
   ```shell
-  python gpu_pipelines/kbcleaning_pipeline_url_vllm.py
-  python gpu_pipelines/kbcleaning_pipeline_url_sglang.py
+  python gpu_pipelines/kbcleaning/kbcleaning_pipeline_url_vllm.py 
+  python gpu_pipelines/kbcleaning/kbcleaning_pipeline_url_sglang.py 
   ```
+    [kbcleaning_pipeline_url_vllm.py](https://github.com/OpenDCAI/DataFlow/blob/main/dataflow/statics/pipelines/gpu_pipelines/kbcleaning/kbcleaning_pipeline_url_vllm.py)
+    [kbcleaning_pipeline_url_sglang.py](https://github.com/OpenDCAI/DataFlow/blob/main/dataflow/statics/pipelines/gpu_pipelines/kbcleaning/kbcleaning_pipeline_url_sglang.py)
 
 ## 4. 流水线示例
 

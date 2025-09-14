@@ -54,8 +54,9 @@ cd gpu_pipelines/kbcleaning
 ## 第四步:一键运行
 
 ```bash
-python kbcleaning_pipeline_batch_sglang.py
+python kbcleaning_pipeline_batch_sglang.py 
 ```
+[code](https://github.com/OpenDCAI/DataFlow/blob/main/dataflow/statics/pipelines/gpu_pipelines/kbcleaning/kbcleaning_pipeline_batch_sglang.py)
 
 运行时，该流水线会先后调用：
 

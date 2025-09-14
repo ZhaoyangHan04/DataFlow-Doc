@@ -80,7 +80,7 @@ For each operator, the following sections will detail its invocation methods and
 
 **Functional Description**:
 
-The Knowledge Extractor operator is a versatile document processing tool that supports extracting structured content from multiple file formats and converting it to standard Markdown format. This operator integrates multiple professional parsing engines to achieve high-precision document content conversion.
+The FileOrURLToMarkdownConverter operator is a versatile document processing tool that supports extracting structured content from multiple file formats and converting it to standard Markdown format. This operator integrates multiple professional parsing engines to achieve high-precision document content conversion. Code: [FileOrURLToMarkdownConverter](https://github.com/OpenDCAI/DataFlow/blob/main/dataflow/operators/knowledge_cleaning/generate/file_or_url_to_markdown_converter.py)
 
 **Input Parameters**:
 
@@ -133,7 +133,7 @@ extracted=file_to_markdown_converter.run(
 ### 2. KBCChunkGenerator
 
 **Functional Description**:
- KBCChunkGenerator is an efficient and flexible text chunking tool specifically designed for processing large-scale text corpora. This operator supports multiple chunking strategies to intelligently segment text for various NLP tasks, with special optimization for RAG (Retrieval-Augmented Generation) applications.
+ KBCChunkGenerator is an efficient and flexible text chunking tool specifically designed for processing large-scale text corpora. This operator supports multiple chunking strategies to intelligently segment text for various NLP tasks, with special optimization for RAG (Retrieval-Augmented Generation) applications. Code:[KBCChunkGenerator](https://github.com/OpenDCAI/DataFlow/blob/main/dataflow/operators/knowledge_cleaning/generate/kbc_chunk_generator.py)
 
 **Input Parameters**:
 
@@ -185,7 +185,7 @@ text_splitter.run(
 ### 3. KBCTextCleaner
 
 **Functional Description**:
-KBCTextCleaner is a professional knowledge cleaning operator specifically designed for standardizing raw content in RAG (Retrieval-Augmented Generation) systems. By leveraging large language model interfaces, it intelligently cleans and formats unstructured knowledge to enhance the accuracy and readability of knowledge bases.
+KBCTextCleaner is a professional knowledge cleaning operator specifically designed for standardizing raw content in RAG (Retrieval-Augmented Generation) systems. By leveraging large language model interfaces, it intelligently cleans and formats unstructured knowledge to enhance the accuracy and readability of knowledge bases. Code:[KBCTextCleaner](https://github.com/OpenDCAI/DataFlow/blob/main/dataflow/operators/knowledge_cleaning/generate/kbc_text_cleaner.py)
 
 **Input Parameters**:
 
@@ -230,7 +230,7 @@ extracted_path = knowledge_cleaner.run(
 
 ###    4. KBCMultiHopQAGenerator
 
-**Function Description**: KBCMultiHopQAGenerator is a professional multi-hop QA pair generation operator, specifically designed to automatically generate question-answer pairs requiring multi-step reasoning from text data. Through its large language model interface, this operator performs intelligent text analysis and complex question construction, making it suitable for building high-quality multi-hop QA datasets.
+**Function Description**: KBCMultiHopQAGenerator is a professional multi-hop QA pair generation operator, specifically designed to automatically generate question-answer pairs requiring multi-step reasoning from text data. Through its large language model interface, this operator performs intelligent text analysis and complex question construction, making it suitable for building high-quality multi-hop QA datasets. Code:[KBCMultiHopQAGenerator](https://github.com/OpenDCAI/DataFlow/blob/main/dataflow/operators/knowledge_cleaning/generate/kbc_multihop_qa_generator.py)
 
 **Input Parameters**:
 
