@@ -46,7 +46,7 @@ dataflow init
 &#x9;Enter the script directory:
 
 ```shell
-cd gpu_pipelines/
+cd gpu_pipelines/kbcleaning
 ```
 
 ## Step 4: One-click execution
@@ -58,9 +58,9 @@ python kbcleaning_pipeline_batch_sglang.py
 During execution, this pipeline will sequentially call:
 
 1. FileOrURLToMarkdownConverter  Converts original files/URLs into Markdown
-2. CorpusTextSplitter  Segments the text into chunks
-3. KnowledgeCleaner  Performs comprehensive cleaning on the segmented text
-4. MultiHopQAGenerator  Synthesizes QA data based on the cleaned knowledge
+2. KBCChunkGenerator  Segments the text into chunks
+3. KBCTextCleaner  Performs comprehensive cleaning on the segmented text
+4. KBCMultiHopQAGenerator  Synthesizes QA data based on the cleaned knowledge
 
 For detailed descriptions of each operator, refer to the "Knowledge Base Cleaning and QA Generation" section. Once executed, a JSON file will be generated in the `.cache` directory with contents as shown below.
 
